@@ -1,0 +1,49 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".Track" >
+
+    <ToggleButton
+        android:id="@+id/tglTorch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="65dp"
+        android:textOff="@string/torchOff"
+        android:textOn="@string/torchOn" />
+    
+
+    <TextView
+        android:id="@+id/txtStepMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="46dp"
+        android:text="@string/stepMessage" />
+
+    <TextView
+        android:id="@+id/txtStepWalkedlabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtStepMessage"
+        android:layout_marginRight="18dp"
+        android:layout_marginTop="54dp"
+        android:layout_toLeftOf="@+id/tglTorch"
+        android:text="@string/stepsWalkedLabel" />
+
+    <TextView
+        android:id="@+id/txtSteps"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/txtStepWalkedlabel"
+        android:layout_alignRight="@+id/tglTorch"
+        />
+
+</RelativeLayout>
